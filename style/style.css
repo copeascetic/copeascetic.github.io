@@ -50,12 +50,9 @@ and then link it! Many fonts have separate files for each style
 
 body {
     font-family: "Liberation Serif", times, sans-serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
+    color: #ddffbb;
     margin: 0;
     background-color: #ddff00;
-    /* you can delete the line below if you'd prefer to not use an image */
-    background-size: 65px;
-    color: #ddffbb;
-    background-image: var(--body-bg-image);
     text-align: justify;
     text-justify: inter-word;
 }

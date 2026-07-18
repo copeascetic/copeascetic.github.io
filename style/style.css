@@ -1,7 +1,8 @@
 
 :root {
-    --header-image: url('../images/deusex.gif');
-    --body-bg-image: url('../images/stars3.gif');
+    --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
+    --body-bg-image: url('../images/deusex.gif');
+	--user-image: url('../images/portrait.jpeg');
 }
 
 
@@ -42,17 +43,18 @@ EXCEPT for the navigation */
 }
 
 #header {
-    width: 100%;
-    background-color: #1b1b1b;
-    height: 256px;
-    background-image: var(--header-image);
-    background-repeat: repeat-x;
+	background-image: var(--header-image);
+	height:150px;
+	width:100%;
+	background-size:100%;
+	text-align:center;
 }
 
 /* navigation section!! */
 #navbar {
     height: 40px;
-    background-color: #220022;
+    background-image: var(--body-bg-image);
+    background-repeat: repeat-x;
     width: 100%;
 }
 
@@ -137,7 +139,6 @@ h3 {
 
 h1 {
 	text-align: center;
-    font-size: 25px;
 }
 
 strong {

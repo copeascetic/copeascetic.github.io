@@ -1,11 +1,9 @@
-/*
-:root {
-    --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
-    --body-bg-image: url('../images/stars3.gif');
 
-     --content: #43256E;
+:root {
+    --header-image: url('../images/deusex.gif');
+    --body-bg-image: url('../images/stars3.gif');
 }
-*/
+
 
 body {
     font-family: 'Liberation Serif', Georgia, serif;

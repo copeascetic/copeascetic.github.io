@@ -1,257 +1,271 @@
+/* user styles */
+
+/* styles are what change the color and sizes of stuff on your site. */
+
+/* these are variables that are being used in the code
+these tended to confuse some people, so I only kept 
+the images as variables */
+
+:root {
+    --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
+    --body-bg-image: url('../images/stars3.gif');
+
+    /* colors */
+    --content: #43256E;
+}
+
+/* if you have the URL of a font, you can set it below */
+/* feel free to delete this if it's not your vibe */
+
+/* this seems like a lot for just one font and I would have to agree 
+but I wanted to include an example of how to include a custom font.
+If you download a font file you can upload it onto your Neocities
+and then link it! Many fonts have separate files for each style
+(bold, italic, etc. T_T) which is why there are so many!
+*/
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
+
 body {
-	background: #1b1b1b ;
-	color: #ddffbb ;
-	margin-bottom: 200px ;
-	font-family: "Liberation Serif", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji' ;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    background-color: #08031A;
+    /* you can delete the line below if you'd prefer to not use an image */
+    background-size: 65px;
+    color: #fceaff;
+    background-image: var(--body-bg-image);
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-[id^="fn:"]{
-	font-size: small ;
-	color: lightgray ;
+* {
+    box-sizing: border-box;
 }
 
-h1 {
-	color: chocolate ;
-}
-h2 {
-	color: sandybrown ;
-}
-h3 {
-	color: tan ;
-}
-h4 {
-	color: wheat ;
-}
-h5, h6 { color: cornsilk ; }
+/* below this line is CSS for the layout */
 
-strong {
-	color: wheat ;
-}
+/* this is a CSS comment
+to uncomment a line of CSS, remove the * and the /
+before and after the text */
 
-a {
-	color: #33bbff ;
-	text-decoration: none ;
+/* the "container" is what wraps your entire website */
+/* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+#container {
+    max-width: 900px;
+    /* this is the width of your layout! */
+    /* if you change the above value, scroll to the bottom
+  and change the media query according to the comment! */
+    margin: 0 auto;
+    /* this centers the entire page */
 }
 
-a:hover {
-	color: goldenrod ;
+/* the area below is for all links on your page
+EXCEPT for the navigation */
+#container a {
+    color: #ED64F5;
+    font-weight: bold;
+    /* if you want to remove the underline
+  you can add a line below here that says:
+  text-decoration:none; */
 }
 
-.titleimg {
-	align: center ;
+#header {
+    width: 100%;
+    background-color: #5e4e8c;
+    /* header color here! */
+    height: 150px;
+    /* this is only for a background image! */
+    /* if you want to put images IN the header, 
+  you can add them directly to the <div id="header"></div> element! */
+    background-image: var(--header-image);
+    background-size: 100%;
 }
 
-.titleimg img {
-	margin: auto ;
-	max-width: 90% ;
-	max-height: 400px ;
-	display: block ;
+/* navigation section!! */
+#navbar {
+    height: 40px;
+    background-color: #13092D;
+    /* navbar color */
+    width: 100%;
 }
 
-.years img {
-	margin: auto ;
-	max-width: 90% ;
-	max-height: 400px ;
-	display: block ;
+#navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
 }
 
-figcaption {
-	text-align: center ;
-	font-style: italic ;
+#navbar li {
+    padding-top: 10px;
 }
 
-.lw, dt img, dd img, p img, li img, h1 img, h2 img, h3 img, h4 img, dt img, td img, button img {
-	max-height: .8em;
-	max-width: 1em;
-	vertical-align: middle ;
+/* navigation links*/
+#navbar li a {
+    color: #ED64F5;
+    /* navbar text color */
+    font-weight: 800;
+    text-decoration: none;
+    /* this removes the underline */
 }
 
-.loc {
-	display: none ;
-	color: #777 ;
+/* navigation link when a link is hovered over */
+#navbar li a:hover {
+    color: #a49cba;
+    text-decoration: underline;
 }
 
-.copies, .volumes {
-	color: #777 ;
+#flex {
+    display: flex;
 }
 
-
-h1,h2,h3,h4,h5,h6 {
-	text-align: center ;
-	clear: both ;
+/* this colors BOTH sidebars
+if you want to style them separately,
+create styles for #leftSidebar and #rightSidebar */
+aside {
+    background-color: #241445;
+    width: 200px;
+    padding: 20px;
+    font-size: 14px;
+    /* this makes the sidebar text slightly smaller */
 }
 
-header {
-	text-align: center ;
-	font-family: "Liberation Sans",arial, sans ;
-	padding-bottom: 15pt ;
-}
-header h1 {
-	font-size: 30pt ;
-	margin-bottom: 0 ;
-}
-header h2 {
-	margin-top: 0 ;
-	font-style: italic ;
-	padding: .5em ;
-}
+/* this is the color of the main content area,
+between the sidebars! */
 main {
-	max-width: 1000px ;
-	margin: auto ;
+    background-color: #43256E;
+    flex: 1;
+    padding: 20px;
+    order: 2;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* what's this "order" stuff about??
+allow me to explain!
+if you're using both sidebars, the "order" value
+tells the CSS the order in which to display them.
+left sidebar is 1, content is 2, and right sidebar is 3! */
+
+#leftSidebar {
+    order: 1;
+}
+
+#rightSidebar {
+    order: 3;
 }
 
 footer {
-	max-width: 600px ;
-	margin-left: auto ;
-	margin-right: auto ;
-	text-align: center ;
-	clear: both ;
-}
-sup {
-	vertical-align: top;
-	font-size: 0.6em;
-}
-
-#TableOfContents li {
-	text-align: center ;
-	font-size: large ;
-	display: block ;
-	font-variant: small-caps ;
+    background-color: #13092D;
+    /* background color for footer */
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    /* this centers the footer text */
 }
 
-#TableOfContents ul {
-	margin: 0;
-	padding: 0;
+h1,
+h2,
+h3 {
+    color: #ED64F5;
 }
 
-#TableOfContents li li {
-	font-size: small ;
-	font-variant: none ;
+h1 {
+    font-size: 25px;
 }
 
-code {
-	color: lime ;
+strong {
+    /* this styles bold text */
+    color: #ED64F5;
 }
 
-.resright {
-    margin: auto ;
-    display: block ;
-    text-align: center ;
-    max-width: 100% ;
-}
-.resright img {
-	max-height: 400px ;
+/* this is just a cool box, it's the darker colored one */
+.box {
+    background-color: #13092D;
+    border: 1px solid #ED64F5;
+    padding: 10px;
 }
 
-nav ul {
-	list-style: none ;
-	text-align: center ;
-	padding-left: 0 ;
+/* CSS for extras */
+
+#topBar {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: smaller;
+    background-color: #13092D;
 }
 
-nav ul li {
-	display: inline ;
-	margin: .25em ;
+/* Image resizing for responsive design */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-nav {
-	border-bottom: 1px #ccc dotted ;
-	width: 100% ;
-}
+/* BELOW THIS POINT IS MEDIA QUERY */
 
-.imgfig {
-	text-align: center ;
-}
+/* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
 
-.rounded img {
-	border-radius: 50% ;
-}
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
 
-.maintab {
-	margin: auto ;
-	max-width: 600px ;
-	border: solid darkred 2px ;
-}
-.maintab a { display: block; width: 100% }
+    aside {
+        width: 100%;
+    }
 
-.maintab tr td:first-child {
-	font-size: x-large ;
-}
-td,th {
-	padding: .5em ;
-	max-width: 500px ;
-	border: solid gray 1px ;
-	border-collapse: collapse
-}
-.maintab td:nth-child(1){
-	font-size: large ;
-}
+    /* the order of the items is adjusted here for responsiveness!
+  since the sidebars would be too small on a mobile device.
+  feel free to play around with the order!
+  */
+    main {
+        order: 1;
+    }
 
-.card {
-	max-width: 250px ;
-	margin: auto ;
-	float: right ;
-	clear: both ;
-}
+    #leftSidebar {
+        order: 2;
+    }
 
-.cardtop {
-	max-width: 100px ;
-	display: inline-block ;
-	margin: .25em ;
-}
+    #rightSidebar {
+        order: 3;
+    }
 
-.cardcont {
-	text-align: center ;
-	max-width: 700px ;
-	margin: auto ;
-}
-
-.cardtop img {
-	max-width: 100% ;
-}
-
-.card img {
-	max-width: 100% ;
-	max-height: 300px ;
-}
-
-.minicard {
-	max-width: 150px ;
-	display: inline ;
-	text-align: left ;
-	padding: 0;
-	margin: 0;
-}
-
-.minicard img {
-	max-width: 150px;
-	max-height: 100% ;
-}
-
-hr { clear: both }
-
-.column {
-	float: left;
-	padding: 10px	;
-	box-sizing: border-box ;
-	width: 100% ;
-}
-
-@media (min-width: 1000px) {
-	.column {
-		max-width: 50%;
-	}
-	.resright, .profile{
-		display: block ;
-		float: right;
-		clear: both ;
-		padding: 10px ;
-		max-width: 400px ;
-	}
-}
-.taglist {
-	max-width: 400px ;
-	margin: auto ;
-	text-align: center ;
-	margin-bottom: 1em ;
+    #navbar ul {
+        flex-wrap: wrap;
+    }
 }

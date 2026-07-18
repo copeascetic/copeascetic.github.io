@@ -56,7 +56,7 @@ EXCEPT for the navigation */
 /* navigation section!! */
 #navbar {
     height: 40px;
-    background-color: #1b1b1b;
+    background-color: #383838;
     width: 100%;
 }
 
@@ -93,7 +93,7 @@ EXCEPT for the navigation */
 if you want to style them separately,
 create styles for #leftSidebar and #rightSidebar */
 aside {
-    background-color: #241445;
+    background-color: #383838;
     width: 200px;
     /* this makes the sidebar text slightly smaller */
 }
@@ -101,7 +101,7 @@ aside {
 /* this is the color of the main content area,
 between the sidebars! */
 main {
-    background-color: #43256E;
+    background-color: #383838;
     flex: 1;
     order: 2;
     text-align: justify;
@@ -145,13 +145,13 @@ h1 {
 }
 
 strong {
-    text-align:center;
+    text-align: center;
     color: #ffbbff;
 }
 
 /* this is just a cool box, it's the darker colored one */
 .box {
-    background-color: #1b1b1b;
+    background-color: #383838;
     border: 1px solid #ffbbff;
     padding: 10px;
 }

@@ -162,7 +162,8 @@ strong {
     height: 30px;
     padding: 10px;
     font-size: smaller;
-    background-color: #1b1b1b;
+    background-image: "../images/deusex.gif";
+    background-repeat: repeat-x;
 }
 
 /* Image resizing for responsive design */

@@ -145,7 +145,7 @@ h1 {
 }
 
 strong {
-    /* this styles bold text */
+    text-align:center;
     color: #ffbbff;
 }
 

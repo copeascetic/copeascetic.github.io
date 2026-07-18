@@ -29,12 +29,12 @@ strong {
 }
 
 a {
-	color: #33bbff ;
+	color: #333fff ;
 	text-decoration: none ;
 }
 
 a:hover {
-	color: goldenrod ;
+	color: magenta ;
 }
 
 .titleimg {
@@ -83,7 +83,6 @@ h1,h2,h3,h4,h5,h6 {
 
 header {
 	text-align: center ;
-	font-family: "Liberation Sans",arial, sans ;
 	padding-bottom: 15pt ;
 }
 header h1 {

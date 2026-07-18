@@ -41,15 +41,13 @@ EXCEPT for the navigation */
   text-decoration:none; */
 }
 
-/*
 #header {
     width: 100%;
-    background-color: #5e4e8c;
+    background-color: #1b1b1b;
     height: 150px;
     background-image: var(--header-image);
     background-size: 100%;
 }
-*/
 
 /* navigation section!! */
 #navbar {
@@ -159,8 +157,6 @@ strong {
     width: 100%;
     height: 60px;
     padding: 8px;
-    background-image: var(--header-image);
-    background-repeat: repeat-x;
 }
 
 /* Image resizing for responsive design */

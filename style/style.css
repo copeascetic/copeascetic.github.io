@@ -56,7 +56,7 @@ EXCEPT for the navigation */
 /* navigation section!! */
 #navbar {
     height: 40px;
-    background-color: #383838;
+    background-color: #220022;
     width: 100%;
 }
 
@@ -136,7 +136,7 @@ footer {
 h1,
 h2,
 h3 {
-    color: #ffbbff;
+    color: #ddffbb;
 }
 
 h1 {
@@ -146,12 +146,11 @@ h1 {
 
 strong {
     text-align: center;
-    color: #ffbbff;
 }
 
 /* this is just a cool box, it's the darker colored one */
 .box {
-    background-color: #383838;
+    background-color: #220022;
     border: 1px solid #ffbbff;
     padding: 10px;
 }
